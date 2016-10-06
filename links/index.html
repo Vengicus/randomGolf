@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+    <title>RN-Golf</title>
+    <link rel = "stylesheet" type = "text/css" href = "../assets/styles/font-awesome-4.3.0/css/font-awesome.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "../assets/styles/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Handlee|Luckiest+Guy|Oswald' rel='stylesheet' type='text/css'>
+    <script type = "text/javascript" src = "../assets/script_assets/angular.min.js"></script>
+    <script type = "text/javascript" src = "../assets/script_assets/angular-sanitize.min.js"></script>
+    
+    <script type = "text/javascript" src = "../assets/scripts/loader.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/keys.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/utilities.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/sound.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/main.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/LevelGenerator.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/PlayerBall.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/Terrain.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/Hole.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/Foliage.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/Camera.js"></script>
+    <script type = "text/javascript" src = "../assets/scripts/classes/Rectangle.js"></script>
+    
+    
+</head>
+<body>
+    <audio id = "bgAudio" src = "../assets/media/audio/song01.mp3" loop></audio>
+    <audio id = "effectAudio"></audio>
+	<canvas id="canvas" width="1280" height="720">
+        Canvas is not supported by your web browser
+    </canvas>
+    <canvas id="topCanvas" width="1280" height="720">
+        Canvas is not supported by your web browser
+    </canvas>
+    
+    <div class = "inheritable">
+        <div class = "menu">
+            <div id = "menuOptions">
+                <h1>JavaScript Golf</h1>
+                <button id = "newGame">New Game</button>
+                <button id = "continue">Continue</button>
+                <button id = "options">Options</button>
+            </div>
+            <div id = "menuLevelSelector">
+                <div id = "menuLevelSelectorSlideShow">
+                    <img id = "preview" src = "../assets/media/images/golfPreview1.jpg" alt = "course preview"/>
+                </div>
+                <div id = "menuLevelSelectorSelect">
+                    <button id = "cycleLevelLeft"><i class = "fa fa-chevron-left fa-3x"></i></button>
+                    <h2 id = "levelName">Watering Plains</h2>
+                    <button id = "cycleLevelRight"><i class = "fa fa-chevron-right fa-3x"></i></button>
+                </div>
+            </div>
+        </div>
+        <button id = "pauseButton"><i class = "fa fa-pause fa-1x"></i></button>
+        <div class = "pause">
+            <div id = "pauseOverlay"></div>
+            <div id = "pauseMenu">
+                <h2>PAUSED</h2>
+                <button id = "continueButton">Continue</button>
+                <button id = "returnToMenu">Return to Menu</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

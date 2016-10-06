@@ -1,0 +1,243 @@
+/*
+    COLORS:
+
+    #2B3A42     Navy blue [DARK]        RGB(43,58,66)
+    #3F5765     Navy blue [LIGHT]       RGB(63,87,101)
+    #BDD4DE     Sky blue                RGB(189,212,212)
+    #EFEFEF     Off White               RGB(239,239,239)
+    #FF530D     Red-Orange              RGB(255,83,13)
+    #FAFAFA     Body
+
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Monda', sans-serif;
+    
+*/
+
+html
+{
+
+}
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: #222222;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+h1, h2, h3, button
+{
+    font-family: 'Oswald', sans-serif;
+}
+h4, h5, h6
+{
+    font-family: 'Monda', sans-serif;
+}
+p
+{
+    font-family: 'Handlee', cursive;
+}
+button
+{
+    border: none;
+    outline: none;
+    z-index: 102;
+}
+button:active
+{
+    outline:none;
+}
+button:hover
+{
+    cursor: pointer;
+}
+i
+{
+    position: relative;
+    z-index: 101;
+}
+canvas
+{
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#topCanvas
+{
+    display: none;
+    z-index: 99;
+}
+
+.inheritable
+{
+    width: 1280px;
+    height: 720px;
+    clear: both;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.menu
+{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: url(../media/images/golf1.jpg);
+    z-index: 100;
+}
+#menuOptions
+{
+    width: 600px;
+    height: 400px;
+    background-color: #29B521;
+    margin-left: 40px;
+    position: relative;
+    top: 150px;
+}
+#menuOptions h1
+{
+    font-family: 'Luckiest Guy', sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #FAFAFA;
+    padding: 5px;
+    position:relative;
+    top: 10px;
+}
+#menuOptions button:nth-child(2)
+{
+    margin-top: 20px;
+}
+#menuOptions button
+{
+    width: 90%;
+    height: 75px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    color: #FAFAFA;
+    background-color: #28AD20;
+    font-size: 16px;
+    transition: color 1s, background-color 1s;
+}
+#menuOptions button:hover
+{
+    background-color: #32FF5E;
+    color: #FFFFFF;
+}
+#menuLevelSelector
+{
+    float:right;
+    display:block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 170px;
+    margin-right: 40px;
+}
+#menuLevelSelectorSlideShow img
+{
+    width: 500px;
+}
+#menuLevelSelectorSelect
+{
+    background-color: #29B521;
+    height: 80px;
+}
+#menuLevelSelectorSelect button
+{
+    color: #FAFAFA;
+    background-color: #29B521;
+    padding-top: 21px;
+    padding-bottom: 18px;
+    transition: color 1s;
+}
+#menuLevelSelectorSelect button:hover
+{
+    color: #32FF5E;
+}
+#menuLevelSelectorSelect button:nth-child(1)
+{
+    float:left;
+}
+#menuLevelSelectorSelect button:nth-child(3)
+{
+    float:right;
+}
+#menuLevelSelectorSelect h2
+{
+    clear:both;
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+    color: #FAFAFA;
+}
+.pause
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+    top: 0;
+}
+#pauseOverlay
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    background-color: #000;
+    z-index: 1000;
+    opacity: 0.5;
+}
+#pauseButton
+{
+    position: absolute;
+    z-index: 1001;
+    background: none;
+    color: #000000;
+}
+#pauseMenu
+{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    display: block;
+    z-index: 1001;
+    background-color: #29B521;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+#pauseMenu h2
+{
+    text-align: center;
+    color: #FAFAFA;
+}
+#pauseMenu button
+{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #28AD20;
+    color: #FAFAFA;
+    z-index: 1002
+    transition: color 1s, background-color 1s;
+}
+#pauseMenu button:hover
+{
+    background-color: #32FF5E;
+    color: #FFFFFF;
+}
